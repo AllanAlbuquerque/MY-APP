@@ -1,0 +1,13 @@
+<h1>Cats</h1>
+
+<h3 style="color: rgb(39, 153, 115);" *ngFor='let cat of cats'>{{ cat.name }} {{ cat.age }} {{ cat.breed }}</h3>
+
+<div style="display: flex; flex-direction: column; width: 20%;">
+  <input [(ngModel)]="cat.name" placeholder="name" type="text">
+  <input [(ngModel)]="cat.age" placeholder="age" type="number">
+  <input [(ngModel)]="cat.breed" placeholder="breed" type="text">
+</div>
+
+<button style="margin-top: 1rem;" (click)="adicionarGatos()">ADD</button>
+
+<!-- <h3 style="color: rgb(6, 138, 138)">{{ message2 }}</h3> -->
